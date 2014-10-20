@@ -1,0 +1,26 @@
+head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible",content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+  title= title
+  meta(name="keywords", content= keywords)
+  meta(name="description", content= description)
+
+  //- Opengraph
+  meta(property="og:title", content= og_title)
+  meta(property="og:description", content= og_description)
+  meta(property="og:type", content= og_type)
+  meta(property="og:url", content= og_url)
+  meta(property="og:image", content= og_img)
+  meta(property="og:site_name", content= og_sitename)
+
+  link(href="#{path}img/favicon.ico", rel="shortcut icon", type="image/x-icon")
+  link(href="#{path}img/apple-touch-icon-precomposed.png", rel="apple-touch-icon-precomposed", size="")
+
+  link(href="#{path}css/normalize.css", rel="stylesheet")
+  link(href="#{path}css/main.css", rel="stylesheet")
+
+  <!--[if lt IE 9]><script src="#{path}js/vendor/html5shiv.min.js"><![endif]-->
+    
+
+  script(src="#{path}js/vendor/modernizr-2.8.3.min.js")

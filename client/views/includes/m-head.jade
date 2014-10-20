@@ -1,0 +1,51 @@
+head
+  meta(charset="utf-8")
+  meta(http-equiv="cleartype",content="on")
+  meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+  title= title
+  meta(name="keywords", content= keywords)
+  meta(name="description", content= description)
+  meta(name="HandheldFriendly", content="True")
+  meta(name="MobileOptimized", content="320")
+
+  //- Opengraph
+  meta(property="og:title", content= og_title)
+  meta(property="og:description", content= og_description)
+  meta(property="og:type", content= og_type)
+  meta(property="og:url", content= og_url)
+  meta(property="og:image", content= og_img)
+  meta(property="og:site_name", content= og_sitename)
+
+  link(rel="apple-touch-icon-precomposed", sizes="144x144", href="#{path}img/touch/apple-touch-icon-144x144-precomposed.png")
+  link(rel="apple-touch-icon-precomposed", sizes="114x114", href="#{path}img/touch/apple-touch-icon-114x114-precomposed.png")
+  link(rel="apple-touch-icon-precomposed", sizes="72x72", href="#{path}img/touch/apple-touch-icon-72x72-precomposed.png")
+  link(rel="apple-touch-icon-precomposed", href="#{path}img/touch/apple-touch-icon-57x57-precomposed.png")
+  link(rel="shortcut icon", sizes="196x196" href="#{path}img/touch/touch-icon-196x196.png")
+  link(rel="shortcut icon", href="#{path}img/touch/apple-touch-icon.png")
+
+  meta(name="msapplication-TileImage", content="#{path}img/touch/apple-touch-icon-144x144-precomposed.png")
+  meta(name="msapplication-TileColor", content="#222222")
+
+  //- Yet not mobile domain
+    link(rel="canonical", href= ca-site)
+
+  //- Andriod Chrome
+    meta(name="mobile-web-app-capable", content="yes")
+
+  //- IOS Chrome
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    meta(name="apple-mobile-web-app-title", content="")
+
+  //- Prevent IOS Safari Open
+    script
+      (function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")
+        
+
+  link(href="#{path}css/normalize.css", rel="stylesheet")
+  link(href="#{path}css/m.main.css", rel="stylesheet")
+
+  <!--[if lt IE 9]><script src="#{path}js/vendor/html5shiv.min.js"><![endif]-->
+    
+
+  script(src="#{path}js/vendor/modernizr-2.8.3.min.js")
