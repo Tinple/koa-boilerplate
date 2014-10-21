@@ -36,25 +36,25 @@ A basic koa app boilerplate initially look like this:
 │   │   ├── main.js
 │   │   ├── plugins.js
 │   │   └── vendor
-│   │      ├── html5shiv.min.js
-│   │      ├── jquery-2.1.1.min.js
-│   │      ├── jquery-2.1.1.min.map
-│   │      └── modernizr-2.8.3.min.js
+│   │       ├── html5shiv.min.js
+│   │       ├── jquery-2.1.1.min.js
+│   │       ├── jquery-2.1.1.min.map
+│   │       └── modernizr-2.8.3.min.js
 │   ├── img
 │   │   ├── startup
 │   │   └── touch
 │   │
 │   └── views         // jade default
-│      ├── index.jade
-│      ├── m-index.jade       // for mobile
-│      ├── includes
-│      │   ├── foot.jade
-│      │   ├── m-foot.jade
-│      │   ├── head.jade
-│      │   └── m-head.jade
-│      └── layouts
-│         ├── default.jade
-│         └── mobile.jade
+│       ├── index.jade
+│       ├── m-index.jade       // for mobile
+│       ├── includes
+│       │   ├── foot.jade
+│       │   ├── m-foot.jade
+│       │   ├── head.jade
+│       │   └── m-head.jade
+│       └── layouts
+│           ├── default.jade
+│           └── mobile.jade
 │
 ├── server
 │   ├── models
@@ -64,7 +64,7 @@ A basic koa app boilerplate initially look like this:
 │   │   └── index.js
 │   │
 │   └── config
-│       ├── config.js
+│       ├── config.js      // your config
 │       └── koa.js
 │
 └── app.js
